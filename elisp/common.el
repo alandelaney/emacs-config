@@ -7,6 +7,7 @@
 (desktop-save-mode 1)
 (setq column-number-mode t)
 (setq scroll-step 1)
+(split-window-right)
 
 (add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/"))
 (add-to-list 'package-archives
@@ -19,3 +20,5 @@
 (global-set-key (kbd "M-p") 'project-explorer-open)
 (set-language-environment "UTF-8")
 (set-default-coding-systems 'utf-8)
+
+(add-hook 'before-save-hook 'delete-trailing-whitespace)
