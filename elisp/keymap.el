@@ -46,4 +46,5 @@
 ;;(global-set-key [f9] )
 (global-set-key [f10] 'keyboard-quit)
 ;;(global-set-key [f11] )
-(global-set-key [f12] 'save-buffers-kill-terminal)
+(global-set-key [f12] 'kill-this-buffer)
+(global-set-key (kbd "<C-f12>") 'save-buffers-kill-terminal)
