@@ -8,6 +8,7 @@
 (setq column-number-mode t)
 (setq scroll-step 1)
 (split-window-right)
+(set-face-attribute 'default nil :height 170)
 
 (add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/"))
 (add-to-list 'package-archives
