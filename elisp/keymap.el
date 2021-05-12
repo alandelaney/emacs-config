@@ -29,6 +29,9 @@
 (define-key isearch-mode-map (kbd "C-,") 'isearch-repeat-backward)
 (define-key isearch-mode-map (kbd "C-.") 'isearch-repeat-forward)
 
+(global-set-key (kbd "<C-left>") 'previous-buffer)
+(global-set-key (kbd "<C-right>") 'next-buffer)
+
 (global-set-key (kbd "§") "#")
 
 ;; Function keys
@@ -43,8 +46,11 @@
 (global-set-key (kbd "<C-f6>") 'yank-pop)
 ;;(global-set-key [f7] )
 (global-set-key [f8] 'kill-whole-line)
+(global-set-key (kbd "<C-f8>") 'kill-line)
 ;;(global-set-key [f9] )
 (global-set-key [f10] 'keyboard-quit)
 ;;(global-set-key [f11] )
 (global-set-key [f12] 'kill-this-buffer)
 (global-set-key (kbd "<C-f12>") 'save-buffers-kill-terminal)
+
+(global-set-key (kbd "C-x C-b") 'ibuffer)

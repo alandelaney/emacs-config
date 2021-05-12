@@ -1,5 +1,11 @@
 (add-to-list 'load-path "~/.emacs.d/elisp/external/Emacs-PDE-v0.2.17/lisp/")
-(add-to-list 'exec-path "/Users/alandelaney/perl5/bin")
+(add-to-list 'exec-path "$HOME/perl5/bin")
+(setq path-to-ctags "$HOME/devbox/whitehat/TAGS")
+(defun create-tags (dir-name)
+  "Create tags file."
+  (interactive "DDirectory: ")
+  (shell-command
+    (format "%s -f TAGS -e -R %s" path-to-ctags (directory-file-name dir-name))))
 (setenv "PERL5LIB"
         (concat
          (getenv "HOME")

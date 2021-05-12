@@ -9,12 +9,7 @@
 (setq scroll-step 1)
 (split-window-right)
 (set-face-attribute 'default nil :height 170)
-
-(add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/"))
-(add-to-list 'package-archives
-             '("melpa" . "http://melpa.milkbox.net/packages/"))
-(add-to-list 'package-archives
-             '("melpa-stable" . "https://stable.melpa.org/packages/"))
+(setq whitespace-line-column 250)
 
 (put 'downcase-region 'disabled nil)
 
