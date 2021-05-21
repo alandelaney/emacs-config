@@ -10,7 +10,8 @@
 (split-window-right)
 (set-face-attribute 'default nil :height 170)
 (setq whitespace-line-column 250)
-
+(require 'auto-complete)
+(setq ac-auto-start 4)
 (put 'downcase-region 'disabled nil)
 
 (global-set-key (kbd "M-p") 'project-explorer-open)

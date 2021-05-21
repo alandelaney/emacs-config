@@ -11,7 +11,7 @@
 (add-hook 'go-mode-hook 'lsp-deferred)
 (add-hook 'completion-at-point-functions 'go-complete-at-point)
 (setenv "GOPATH" "~/go/bin/")
-(require 'go-flymake)
+;;(require 'go-flymake)
 (require 'protobuf-mode)
 (eval-after-load 'flycheck
   '(add-hook 'flycheck-mode-hook #'flycheck-golangci-lint-setup))

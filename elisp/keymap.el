@@ -54,3 +54,4 @@
 (global-set-key (kbd "<C-f12>") 'save-buffers-kill-terminal)
 
 (global-set-key (kbd "C-x C-b") 'ibuffer)
+(global-set-key (kbd "M-s-a") 'auto-complete-mode)
