@@ -7,6 +7,8 @@
 (add-hook 'js-mode-hook (lambda () (tern-mode t)))
 (add-hook 'js2-mode-hook #'js2-imenu-extras-mode)
 (add-hook 'js2-mode-hook #'js2-refactor-mode)
+(add-hook 'js2-mode-hook (lambda () (setq js2-basic-offset 2)))
+(add-to-list 'auto-mode-alist '("\\.mjs\\'" . js2-mode))
 
 (eval-after-load 'tern
    '(progn
